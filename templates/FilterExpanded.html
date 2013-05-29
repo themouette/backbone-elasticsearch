@@ -1,0 +1,12 @@
+<h6><%= placeholder %></h6>
+<div class="controls">
+    <% _.each(choices, function (choice, id) { %>
+    <%= itemTemplate({
+        text: choice.text,
+        id: choice.id,
+        fieldname: fieldname,
+        disabled: false,
+        selected: choice.selected
+    }) %>
+    <% }) %>
+</div>
